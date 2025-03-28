@@ -104,9 +104,9 @@
     <input type="text" class="rounded-2xl outline-2 outline-zinc-500 focus:outline-zinc-300 text-zinc-200" placeholder="Rechercher un nom..." bind:value={search} />
     <span class="toggle-button" on:click={toggleViewMode}>
       {#if viewMode === 'normal'}
-        <Icon icon="ix:table-rows" height="2rem" class="text-zinc-300" />
+        <Icon icon="ix:table-rows" height="2rem" class="text-zinc-300 hover:text-zinc-100" />
       {:else}
-        <Icon icon="ix:prio-high" height="2rem" class="text-zinc-300" />
+        <Icon icon="ix:prio-high" height="2rem" class="text-zinc-300 hover:text-zinc-100" />
       {/if}
     </span>
   </div>
@@ -183,7 +183,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(37, 19, 17, 0.74), rgba(37, 19, 17, 1.0));
+    /* background: linear-gradient(rgba(37, 19, 17, 0.74), rgba(37, 19, 17, 1.0)); */
+    background: linear-gradient(rgba(23, 17, 14, 0.74), rgba(23, 17, 14, 1.0));
   }
 
   .hero-content {
@@ -200,19 +201,31 @@
   }
 
   main {
-    background-color: #251311;
+    /* background-color: #251311; */
+    background-color: #17110e;
     padding: 2rem 4rem;
     min-height: 2176px;
   }
 
   .names {
     columns: 4;
+    column-rule: 1px solid rgba(248, 209, 109, 0.07);
     font-family: "Cinzel", serif;
     text-transform: uppercase;
     text-align: center;
 
     a {
       color: #f8d16d;
+      transition: all 0.2s;
+    }
+
+    a:hover {
+      text-shadow: 0px 0px 10px rgba(235, 213, 160, 0.31);
+      color: #ffe091;
+    }
+
+    > li {
+      margin-bottom: 0.5rem;
     }
   }
 
@@ -240,9 +253,9 @@
 
   .table-wrapper {
 		border-spacing: 0;
-		border-top: 1px solid rgba(71, 85, 105, 0.3);
-		border-left: 1px solid rgba(71, 85, 105, 0.3);
-		border-right: 1px solid rgba(71, 85, 105, 0.3);
+		border-top: 1px solid rgba(82, 82, 91, 0.3);
+		border-left: 1px solid rgba(82, 82, 91, 0.3);
+		border-right: 1px solid rgba(82, 82, 91, 0.3);
     border-radius: 1rem;
     width: 100%;
   }
@@ -252,13 +265,13 @@
 	}
 
 	th, td {
-		border-bottom: 1px solid rgba(71, 85, 105, 0.3);
+		border-bottom: 1px solid rgba(82, 82, 91, 0.3);
 		padding: 0.5rem 1rem;
     text-align: left;
 	}
 
   th {
-    color: #e2e8f0;
+    color: #e4e4e7;
   }
 
   tbody tr {
@@ -266,11 +279,11 @@
   }
 
   tbody tr:hover {
-    background-color: #2c1b19;
+    background-color: #241a15;
   }
 
   td {
-    color: #94a3b8;
+    color: #a3a3a3;
   }
   
 </style>
