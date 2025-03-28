@@ -11,6 +11,7 @@
   </a>
   <ul>
     <li><a href="/statistiques">Statistiques</a></li>
+    <li><a href="/le-monument">Le monument</a></li>
     <li><a href="/a-propos">À propos</a></li>
   </ul>
 </nav>
