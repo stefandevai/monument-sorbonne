@@ -4,3 +4,4 @@
 - Titre principal
 - Soutitre principal
 - Logo
+- Credits

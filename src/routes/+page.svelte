@@ -94,19 +94,19 @@
   <div class="hero-image"></div>
 
   <div class="hero-content">
-    <h1 class="text-slate-100">AUX ÉTUDIANTS ET ANCIENS ÉTUDIANTS DE LA FACULTÉ DES LETTRES</h1>
-    <span class="text-slate-300 italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis in nunc ultrices ultricies. Nullam eget felis in nunc ultrices ultricies.</span>
+    <h1 class="text-zinc-100">AUX ÉTUDIANTS ET ANCIENS ÉTUDIANTS DE LA FACULTÉ DES LETTRES</h1>
+    <span class="text-zinc-300 italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis in nunc ultrices ultricies. Nullam eget felis in nunc ultrices ultricies.</span>
   </div>
 </div>
 
 <main>
   <div class="controls">
-    <input type="text" class="rounded-2xl outline-2 outline-slate-500 focus:outline-slate-300 text-slate-200" placeholder="Rechercher un nom..." bind:value={search} />
+    <input type="text" class="rounded-2xl outline-2 outline-zinc-500 focus:outline-zinc-300 text-zinc-200" placeholder="Rechercher un nom..." bind:value={search} />
     <span class="toggle-button" on:click={toggleViewMode}>
       {#if viewMode === 'normal'}
-        <Icon icon="ix:table-rows" height="2rem" class="text-slate-300" />
+        <Icon icon="ix:table-rows" height="2rem" class="text-zinc-300" />
       {:else}
-        <Icon icon="ix:prio-high" height="2rem" class="text-slate-300" />
+        <Icon icon="ix:prio-high" height="2rem" class="text-zinc-300" />
       {/if}
     </span>
   </div>
